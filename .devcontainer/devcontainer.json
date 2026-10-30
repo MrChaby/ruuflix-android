@@ -1,0 +1,13 @@
+{
+  "name": "RuuFlix Android Cloud Build",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "java -version && keytool -help >/dev/null 2>&1 || true",
+  "customizations": {
+    "vscode": {
+      "extensions": ["vscjava.vscode-java-pack", "redhat.java"]
+    }
+  }
+}
